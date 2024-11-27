@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>html project</title>
+  </head>
+  <header class="header">
+    <h1 class="header__title">john doe</h1>
+    <nav class="header__nav-list">
+      <ul class="nav-list">
+        <li>
+          <a class="nav-list__link nav-list__link--active" href="#">Home</a>
+        </li>
+        <li><a class="nav-list__link" href="#about">About ME</a></li>
+        <li><a class="nav-list__link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-list__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="about" id="about">
+      <h2 class="about__title">About Me</h2>
+      <p class="about__text">
+        hello , i am ali hdedeh i am going to help you build your website.
+      </p>
+      <p class="about__text">love to show you my work</p>
+    </section>
+
+    <section class="portfolio" id="porftolio">
+      <h2 class="portfolio__title">My Portfolio</h2>
+      <div class="portfolio__cards">
+        <div class="project">
+          <img
+            class="project__image"
+            src="/images/portfolio-1.jpg"
+            alt="project"
+          />
+          <h3 class="project__title">eco-friendly travel app</h3>
+          <p class="project__description">
+            an app that help you in your travels to find activities and
+            accommodation
+          </p>
+          <button class="project__button">view project</button>
+        </div>
+
+        <div class="project">
+          <img
+            class="project__image"
+            src="/images/portfolio-2.jpg"
+            alt="project"
+          />
+          <h3 class="project__title">virtual health and fitness</h3>
+          <p class="project__description">
+            a platform connecting , offering online plans and nutrition tips
+          </p>
+          <button class="project__button">view project</button>
+        </div>
+
+        <div class="project">
+          <img
+            class="project__image"
+            src="/images/portfolio-3.jpg"
+            alt="project"
+          />
+          <h3 class="project__title">Ai-powerd learning platform</h3>
+          <p class="project__description">
+            educational platform to help all students with the help of AI
+          </p>
+          <button class="project__button">view project</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contact Me</h2>
+      <form class="contact__form" action="post">
+        <label class="contact__label" for="name">Name:</label>
+        <input
+          class="contact__input"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+        <br />
+        <br />
+        <label class="contact__label" for="email">Email:</label>
+        <input
+          class="contact__input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <br />
+        <br />
+        <label class="contact__label" for="message">Message:</label>
+        <textarea
+          class="contact__textarea"
+          name="message"
+          id="message"
+          cols="30"
+          rows="4"
+        ></textarea>
+        <br />
+        <br />
+        <input class="contact__submit" type="submit" value="Send Message" />
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 john doe portfolio</p>
+  </footer>
+  <body></body>
+</html>
